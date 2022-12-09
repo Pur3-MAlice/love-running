@@ -65,7 +65,6 @@ h1, h2 {
     height: 600px;
     width: 100%;   
     overflow: hidden;
-
     position: relative;
 }
 
@@ -78,7 +77,6 @@ h1, h2 {
     height: 600px;
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
-    
     /*animates zoom effect on loading page*/
     animation-name: hero-zoom;
     animation-duration: 5s;
@@ -86,7 +84,6 @@ h1, h2 {
 }
 
 /* creates the level of zoom for hero image*/
-
 @keyframes hero-zoom {
     from {
         transform: scale(1);
@@ -101,34 +98,26 @@ h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-
     width: 300px;
     height: 200px;
-
     padding-top: 40px;
     padding-left: 10px;
-
     background-color: rgba(241, 109, 107, .7);
-
     bottom: 30px;
     right: 150px;
-
     position: absolute;
 }
-
 
 /* club ethos */
 #club-ethos {
     height: 600px;
 }
 
-
 #left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
 }
-
 
 #right-about {
     padding-top: 30px;
@@ -249,9 +238,42 @@ footer {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 0px;
+    column-gap: 0;
 }
 
 #photos > img {
     width: 100%;
+}
+
+/* Media Queries*/
+/* For larger and med size screens*/
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
